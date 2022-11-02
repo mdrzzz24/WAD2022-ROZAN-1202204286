@@ -10,7 +10,7 @@
     <body>
         
     <?php
-        $date = $_POST['bookdate'];
+        $date = $_P0ST['bookdate'];
         $duration = $_POST['duration'];
         $car = $_POST['car'];
         $phone = $_POST['phone'];
@@ -54,7 +54,7 @@
         <tr>
           <td><?php echo $rand?></td>
           <td><?php echo $nama;?></td>
-          <td><?php echo date("d-m-y", strtotime(" ",strtotime($date)))?> <?php echo $_POST['time'] ?></td>
+          <td><?php date("d-m-y", strtotime(" ",strtotime($date)))?> <?php echo $_POST['time'] ?></td>
           <td><?php echo date("d-m-y", strtotime("+$duration day", strtotime($date))) ?><?php echo $_POST['time']?></td>
           <td><?php
           echo $car?></td>
@@ -64,7 +64,7 @@
                     if ($srv) {
                         $serv = $_POST['service'];
                         foreach ($srv as $service){
-                            echo "<li> $service</li>";
+                            "<li> $service</li>";
                             if($service == "Health Protocol"){
                                 $count += 25000;
                             }
